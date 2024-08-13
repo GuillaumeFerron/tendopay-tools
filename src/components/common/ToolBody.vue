@@ -26,7 +26,7 @@ export default {
           url: 'https://tendo-income-calculator.netlify.app/'
         },
         {
-          title: 'IR Corrector',
+          title: 'IR CORRECTOR',
           url: 'https://tendo-ir-corrector.netlify.app/'
         }
       ]
