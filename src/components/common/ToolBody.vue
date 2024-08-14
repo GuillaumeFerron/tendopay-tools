@@ -36,6 +36,10 @@ export default {
         {
           title: 'DTI CALCULATOR',
           url: 'https://tendo-dti-calculator.netlify.app/'
+        },
+        {
+          title: 'ELS FORMATTER',
+          url: 'https://tendo-els-formatter.netlify.app/'
         }
       ]
     }
@@ -76,5 +80,9 @@ export default {
 
   .tool-3 {
     background: linear-gradient(135deg, #FF9E05, #FFF8B4);
+  }
+
+  .tool-4 {
+    background: linear-gradient(135deg, #E63E4C, #D5ACC1);
   }
 </style>
