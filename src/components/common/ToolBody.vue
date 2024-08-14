@@ -28,6 +28,10 @@ export default {
         {
           title: 'IR CORRECTOR',
           url: 'https://tendo-ir-corrector.netlify.app/'
+        },
+        {
+          title: 'DTI ADJUSTER',
+          url: 'https://tendo-dti-adjuster.netlify.app/'
         }
       ]
     }
