@@ -65,4 +65,8 @@ export default {
   .tool-1 {
     background: linear-gradient(to right, #b1f5bc, #024bcf);
   }
+
+  .tool-2 {
+    background: linear-gradient(135deg, #F62881, #00B665);
+  }
 </style>
