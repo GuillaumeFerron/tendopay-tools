@@ -40,6 +40,10 @@ export default {
         {
           title: 'ELS FORMATTER',
           url: 'https://tendo-els-formatter.netlify.app/'
+        },
+        {
+          title: 'LOAN FORMATTER',
+          url: 'https://tendo-loan-formatter.netlify.app/'
         }
       ]
     }
@@ -84,5 +88,9 @@ export default {
 
   .tool-4 {
     background: linear-gradient(135deg, #E63E4C, #D5ACC1);
+  }
+
+  .tool-5 {
+    background: linear-gradient(135deg, #69CEEE, #EFB9E5);
   }
 </style>
