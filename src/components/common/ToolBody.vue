@@ -1,7 +1,7 @@
 <template>
   <div class="card shadow mb-0 w-75">
     <div class="card-body px-5">
-      <div class="row">
+      <div class="row d-flex justify-content-between">
         <div class="card col-3 m-3 tool mh-2 d-flex justify-content-center align-items-center clickable"
           v-for="(tool, key) in tools" v-bind:key="tool.title" @mouseenter="onHover(key, true)" @mouseleave="onHover(key, false)"
           :class="(hover[key] ? 'shadow' : '') + ' tool-' + key"
@@ -32,6 +32,10 @@ export default {
         {
           title: 'DTI ADJUSTER',
           url: 'https://tendo-dti-adjuster.netlify.app/'
+        },
+        {
+          title: 'DTI CALCULATOR',
+          url: 'https://tendo-dti-calculator.netlify.app/'
         }
       ]
     }
@@ -54,7 +58,7 @@ export default {
   }
 
   .tool {
-    height: 100px;
+    height: 150px;
     transition: all 0.2s ease;
   }
 
@@ -68,5 +72,9 @@ export default {
 
   .tool-2 {
     background: linear-gradient(135deg, #F62881, #00B665);
+  }
+
+  .tool-3 {
+    background: linear-gradient(135deg, #FF9E05, #FFF8B4);
   }
 </style>
