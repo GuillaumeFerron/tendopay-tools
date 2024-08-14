@@ -59,11 +59,11 @@ export default {
   }
 
   .tool-0 {
-    background: linear-gradient(to left, #0a2da2, #b11bbb);
+    background: linear-gradient(135deg, #0a2da2, #b11bbb);
   }
 
   .tool-1 {
-    background: linear-gradient(to right, #b1f5bc, #024bcf);
+    background: linear-gradient(135deg, #b1f5bc, #024bcf);
   }
 
   .tool-2 {
