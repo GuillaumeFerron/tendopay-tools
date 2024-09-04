@@ -2,13 +2,15 @@
   <div class="card shadow mb-0 w-75">
     <div class="card-body px-5">
       <div class="row d-flex justify-content-between">
-        <div class="card col-3 m-3 tool mh-2 d-flex justify-content-center align-items-center clickable"
-          v-for="(tool, key) in tools" v-bind:key="tool.title" @mouseenter="onHover(key, true)" @mouseleave="onHover(key, false)"
-          :class="(hover[key] ? 'shadow' : '') + ' tool-' + key"
+        <div
+          class="card px-0 pt-4 col-5 m-3 tool mh-2 d-flex flex-column justify-content-between align-items-center clickable overflow-hidden"
+          v-for="(tool, key) in tools" v-bind:key="tool.title" @mouseenter="onHover(key, true)"
+          @mouseleave="onHover(key, false)" :class="(hover[key] ? 'shadow' : '') + ' tool-' + key"
           @click="goToTool(tool)">
           <div>
-            <h4 class="text-white"><b>{{ tool.title }}</b></h4>
+            <h4 class="text-white px-3 mb-0"><b>{{ tool.title }}</b></h4>
           </div>
+          <div class="w-100 h-75 tool-image" :style="{ backgroundImage: `url(${tool.img})` }"></div>
         </div>
       </div>
     </div>
@@ -23,31 +25,38 @@ export default {
       tools: [
         {
           title: 'INCOME CALCULATOR',
-          url: 'https://tendo-income-calculator.netlify.app/'
+          url: 'https://tendo-income-calculator.netlify.app/',
+          img: '/tools/income-calculator.jpeg'
         },
         {
           title: 'IR CORRECTOR',
-          url: 'https://tendo-ir-corrector.netlify.app/'
+          url: 'https://tendo-ir-corrector.netlify.app/',
+          img: '/tools/ir-corrector.jpeg'
         },
         {
           title: 'DTI ADJUSTER',
-          url: 'https://tendo-dti-adjuster.netlify.app/'
+          url: 'https://tendo-dti-adjuster.netlify.app/',
+          img: '/tools/dti-adjuster.jpeg'
         },
         {
           title: 'DTI CALCULATOR',
-          url: 'https://tendo-dti-calculator.netlify.app/'
+          url: 'https://tendo-dti-calculator.netlify.app/',
+          img: '/tools/dti-calculator.jpeg'
         },
         {
           title: 'ELS FORMATTER',
-          url: 'https://tendo-els-formatter.netlify.app/'
+          url: 'https://tendo-els-formatter.netlify.app/',
+          img: '/tools/els-formatter.jpeg'
         },
         {
           title: 'LOAN FORMATTER',
-          url: 'https://tendo-loan-formatter.netlify.app/'
+          url: 'https://tendo-loan-formatter.netlify.app/',
+          img: '/tools/loan-formatter.jpeg'
         },
         {
           title: 'LOAN CALCULATOR',
-          url: 'https://tendo-loan-calculator.netlify.app/'
+          url: 'https://tendo-loan-calculator.netlify.app/',
+          img: '/tools/loan-calculator.jpeg'
         }
       ]
     }
@@ -70,8 +79,9 @@ export default {
   }
 
   .tool {
-    height: 150px;
+    height: 250px;
     transition: all 0.2s ease;
+    border: 0;
   }
 
   .tool-0 {
@@ -100,5 +110,11 @@ export default {
 
   .tool-6 {
     background: linear-gradient(135deg, #EDDCE2, #99A8C3);
+  }
+
+  .tool-image {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 </style>
