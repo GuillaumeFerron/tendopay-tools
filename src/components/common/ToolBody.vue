@@ -44,6 +44,10 @@ export default {
         {
           title: 'LOAN FORMATTER',
           url: 'https://tendo-loan-formatter.netlify.app/'
+        },
+        {
+          title: 'LOAN CALCULATOR',
+          url: 'https://tendo-loan-calculator.netlify.app/'
         }
       ]
     }
@@ -92,5 +96,9 @@ export default {
 
   .tool-5 {
     background: linear-gradient(135deg, #69CEEE, #EFB9E5);
+  }
+
+  .tool-6 {
+    background: linear-gradient(135deg, #EDDCE2, #99A8C3);
   }
 </style>
