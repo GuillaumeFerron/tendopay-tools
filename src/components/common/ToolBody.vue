@@ -57,6 +57,11 @@ export default {
           title: 'LOAN CALCULATOR',
           url: 'https://tendo-loan-calculator.netlify.app/',
           img: '/tools/loan-calculator.jpeg'
+        },
+        {
+          title: 'ARRANGEMENT CALCULATOR',
+          url: 'https://tendo-arrangement-calculator.netlify.app/',
+          img: '/tools/arrangement-calculator.jpeg'
         }
       ]
     }
@@ -110,6 +115,14 @@ export default {
 
   .tool-6 {
     background: linear-gradient(135deg, #EDDCE2, #99A8C3);
+  }
+
+  .tool-7 {
+    background: linear-gradient(135deg, #853C7E, #97422E);
+
+    b {
+      font-size: 1.4rem;
+    }
   }
 
   .tool-image {
