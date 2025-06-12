@@ -62,6 +62,11 @@ export default {
           title: 'ARRANGEMENT CALCULATOR',
           url: 'https://tendo-arrangement-calculator.netlify.app/',
           img: '/tools/arrangement-calculator.jpeg'
+        },
+        {
+          title: 'RESCHEDULER',
+          url: 'https://tendo-rescheduler.netlify.app/',
+          img: '/tools/rescheduler.jpg'
         }
       ]
     }
@@ -123,6 +128,10 @@ export default {
     b {
       font-size: 1.4rem;
     }
+  }
+
+  .tool-8 {
+    background: linear-gradient(135deg, #2A7B9B, #EDDD53);
   }
 
   .tool-image {
